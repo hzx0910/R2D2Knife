@@ -7,6 +7,7 @@ Eliminate findViewById calls by using @InjectSameId on fields.
 Group multiple views in a list or array. Operate on all of them at once with actions, setters, or properties.
 Eliminate anonymous inner-classes for listeners by annotating methods with @OnClickSameId and others.
 Eliminate resource lookups by using resource annotations on fields.
+
 class TestActivity extends Activity {
     @InjectSameId
     private EditText email, password;
