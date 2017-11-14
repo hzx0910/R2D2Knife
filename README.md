@@ -1,12 +1,10 @@
 # R2D2Knife
 Bind Android views and callbacks to fields and methods like butterknife
 
-Field and method binding for Android views which uses annotation processing to generate boilerplate code for you.
-
 Eliminate findViewById calls by using @InjectSameId on fields.
-Group multiple views in a list or array. Operate on all of them at once with actions, setters, or properties.
 Eliminate anonymous inner-classes for listeners by annotating methods with @OnClickSameId and others.
-Eliminate resource lookups by using resource annotations on fields.
+
+Better than butterknife：Bind same view type together!
 
     class TestActivity extends Activity {
         @InjectSameId
