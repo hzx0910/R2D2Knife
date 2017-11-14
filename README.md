@@ -8,22 +8,22 @@ Group multiple views in a list or array. Operate on all of them at once with act
 Eliminate anonymous inner-classes for listeners by annotating methods with @OnClickSameId and others.
 Eliminate resource lookups by using resource annotations on fields.
 
-class TestActivity extends Activity {
-    @InjectSameId
-    private EditText email, password;
-    @InjectSameId
-    private View login_progress, login_form;
+    class TestActivity extends Activity {
+        @InjectSameId
+        private EditText email, password;
+        @InjectSameId
+        private View login_progress, login_form;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        R2d2Knife.injectSameId(this, R.id.class);
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_login);
+            R2d2Knife.injectSameId(this, R.id.class);
 
+        }
+
+        @OnClickSameId
+        private void email_sign_in_button() {
+        //todo
+        }
     }
-    
-    @OnClickSameId
-    private void email_sign_in_button() {
-    //todo
-    }
-}
