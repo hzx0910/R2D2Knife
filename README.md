@@ -4,7 +4,7 @@ Bind Android views and callbacks to fields and methods like butterknife
 Eliminate findViewById calls by using @InjectSameId on fields.
 Eliminate anonymous inner-classes for listeners by annotating methods with @OnClickSameId and others.
 
-Better than butterknife：*Bind same view type together !*
+Better than butterknife：**Bind same view type together !**
 
     class TestActivity extends Activity {
         @InjectSameId
